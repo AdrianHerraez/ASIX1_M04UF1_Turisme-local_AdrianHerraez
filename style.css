@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+p {
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+h4 {
+    font-size: 1.3rem;
+}
+
+h5 {
+    font-size: 1.15rem;
+}
+
+h6 {
+    font-size: 1.05rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column-2 {
+    width: 20%;
+    float: left;
+}
+
+.column-3 {
+    width: 33.33%;
+    float: left;
+}
+
+.column-4 {
+    width: 40%;
+    float: left;
+}
+
+.column-6 {
+    width: 60%;
+    float: left;
+}
+
+.column-75 {
+    width: 75%;
+    float: left;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    height: 100vh;
+    background-image: url("img/brandon-burridge-4o7f9_Z73a4-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+img {
+    width: 100%;
+}
+
+#img-1 {
+    height: 50vh;
+    background-image: url("img/arya-krisdyantara-LTEfj149DLQ-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.nav {
+    padding: 2%;
+    width: 25%;
+    float: left;
+}
+
+@media only screen and (max-width: 600px) {
+    .column-3 {
+        width: 100%;
+    }
+    .column-4 {
+        width: 50%;
+    }
+    .column-75,
+    .column-nav {
+        width: 100%;
+    }
+}
