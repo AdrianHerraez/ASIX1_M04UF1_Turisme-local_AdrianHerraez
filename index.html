@@ -7,14 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
     <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
 </head>
 
 <body>
+    <div class="header">
+        <h1 id="barcelona">TURISMO POR BARCELONA</h1>
+    </div>
     <div class="row">
         <div class="nav">
-            <p>Menú</p>
+            <h4>Menú</h4>
             <ul>
-                <li><a href="#gallery">Galería</a></li>
+                <li><a href="#barcelona">Barcelona</a></li>
+                <li><a href="#historia">Historia</a></li>
                 <li><a href="#art-1">Artículo 1</a></li>
                 <li><a href="#art-2">Artículo 2</a></li>
                 <li><a href="#art-3">Artículo 3</a></li>
@@ -22,17 +27,78 @@
             </ul>
         </div>
         <div class="column-6">
-            <h1>SITIO</h1>
+            <h3 id="historia">Historia</h3>
+            <img src="img/bcn.jpg" alt="">
+
             <h3>Lugares importantes</h3>
-            <p>xddddddddddddddd dddddddddddddd ddddddddd ddddddddd dddddddd dd dddddddddd dddddddd d ddddddd ddddddd ddddddddd</p>
-            <div id="img-1"></div>
-            <p>xddddddddddddddd dddddddddddddd ddddddddd ddddddddd dddddddd dd dddddddddd dddddddd d ddddddd ddddddd ddddddddd</p>
+
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext texto1">1 / 4</div>
+                    <img src="img/la-rambla-portada.jpg" style="width:100%">
+                    <div class="text">Las Ramblas</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="img/paseo-de-gracia.png" style="width:100%">
+                    <div class="text">El Passeig de Gràcia</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="img/Plaza-Catalunya.jpg" style="width:100%">
+                    <div class="text">Plaza Catalunya</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="img/sagrada-familia-sagradafamilia.jpg" style="width:100%">
+                    <div class="text">La Sagrada Familia</div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <div id="relleno"><img id="relleno" src="img/la-rambla-portada.jpg" style="width:100%">
+                    <div class="text" id="relleno">Las Ramblas</div>
+                </div>
+            </div>
+
+            <div id="id1">
+                <p>Las Ramblas es una calle del centro de Barcelona. Calle peatonal arbolada, se extiende a lo largo de 1,2 km conectando la Plaça de Catalunya en su centro con el Monumento a Cristóbal Colón en el Port Vell. La Rambla forma el límite entre
+                    los barrios del Barri Gòtic al este y el Raval al oeste. <br>El paseo está lleno de gente de día y hasta altas horas de la noche. Está jalonado de quioscos de prensa, flores y otros por decidir que sustituyan a las antiguas paradas
+                    de pequeños animales (principalmente aves), actores callejeros, cafeterías, restaurantes y comercios.</p>
+            </div>
+            <div id="id2">
+                <p>El Passeig de Gràcia es una de las avenidas principales y más famosas de Barcelona, debido a su importancia turística, áreas comerciales, negocios y un gran escaparate de obras destacadas de arquitectura modernista, como las edificaciones
+                    de los arquitectos Antoni Gaudí y Lluís Domènech i Montaner, declaradas Patrimonio de la Humanidad. <br> La avenida está situada en la parte central de la ciudad, el Ensanche barcelonés, y conecta la plaza de Cataluña al este con la
+                    calle Mayor de Gracia al oeste.</p>
+            </div>
+            <div id="id3">
+                <p>La plaza de Cataluña (en catalán, plaça de Catalunya) es una céntrica plaza de Barcelona, uno de los centros neurálgicos de la ciudad. Tiene una superficie de 5 hectáreas. <br> Constituye el punto de unión entre el núcleo viejo de la ciudad
+                    y el Ensanche. De aquí parten importantes vías de la ciudad como la Rambla, el paseo de Gracia, la rambla de Cataluña o las rondas de la Universidad y de San Pedro, y la calle de Pelayo, así como la avenida de Portal del Ángel, la
+                    gran arteria comercial de la ciudad, y antigua puerta de las murallas.</p>
+            </div>
+            <div id="id4">
+                <p>El Templo Expiatorio de la Sagrada Familia, conocido simplemente como la Sagrada Familia, es una basílica católica de Barcelona, diseñada por el arquitecto Antoni Gaudí. Iniciada en 1882, todavía está en construcción. Es la obra maestra
+                    de Gaudí y el máximo exponente de la arquitectura modernista catalana. <br>Es uno de los monumentos más visitados de España, junto al Museo del Prado y la Alhambra de Granada, y es la iglesia más visitada de Europa tras la basílica
+                    de San Pedro del Vaticano. Cuando esté finalizada, será la iglesia cristiana más alta del mundo. </p>
+            </div>
+
             <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
             <h3>Mapa</h3>
             <p>xddddddddddddddd dddddddddddddd ddddddddd ddddddddd dddddddd dd dddddddddd dddddddd d ddddddd ddddddd ddddddddd</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16135231.61288913!2d-84.06738763910548!3d-9.130472692183536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c850c05914f5%3A0xf29e011279210648!2zUGVyw7o!5e0!3m2!1ses!2ses!4v1675156784842!5m2!1ses!2ses"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95780.6243159463!2d2.1401890999999997!3d41.392667949999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a49816718e30e5%3A0x44b0fb3d4f47660a!2sBarcelona!5e0!3m2!1ses!2ses!4v1675758885285!5m2!1ses!2ses"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
+
         <div class="column-2">
 
         </div>
